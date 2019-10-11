@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/add">Add a message</a>
+    <div th:each="message : ${messages}">
+        <div th:if="${message.content}" !="null">
+            <img th:Src="${message.content}" /><hr />/
+        </div>
+        <h4 th:text="${message.sentBy}">/h3></h4> th:text="${message.postedDate}"></h4
+    </div>
+</body>
+</html>
